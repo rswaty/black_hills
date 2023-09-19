@@ -57,7 +57,7 @@ quickmap <- qtm(shp,
                 fill = NULL, 
                 check.and.fix = TRUE, 
                 basemaps = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
-                title = 'Colorado Plateau Subregion',)
+                title = 'Black Hills Subregion',)
 
 quickmap
 

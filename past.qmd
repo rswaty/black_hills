@@ -25,7 +25,7 @@ Scroll down to explore the "historical disturbances per ecosystem" using the int
 ![](images/bps.jpg){width=100%}
 <br>
 
-```{r bps chart, message=FALSE, warning=FALSE, echo=FALSE, fig.width=10, fig.height=10}
+```{r bps chart, message=FALSE, warning=FALSE, echo=FALSE, fig.width=10, fig.height=12}
 library(tidyverse)
 library(scales)
 library(stringr)
@@ -51,7 +51,7 @@ bpsChart <-
   scale_x_discrete(limits = rev(bpsname$BPS_NAME),
                    labels = function(x) str_wrap(x, width = 18)) +
   coord_flip() +
-  theme_bw(base_size = 14)
+  theme_bw(base_size = 12)
 
 
 bpsChart
